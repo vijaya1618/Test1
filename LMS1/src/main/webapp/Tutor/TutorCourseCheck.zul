@@ -1,0 +1,20 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+
+<window  title="Courses Available"  width="700px" border="normal" use="com.lms.Tutor.TutorCourseCheckCtrl"
+closable="true">
+      	<div align="right" style="margin-right:10%">
+	<listbox id="courseDetails" width="700px">
+		<listhead>
+			<listheader label="COURSE ID"/>
+		<listheader label="DEPARTMENT ID"/>
+			<listheader label="COURSE NAME" />
+			<listheader label="COURSE DURATION" />
+			<listheader label="COURSE TUTOR ID" />
+			</listhead>
+	</listbox>
+	
+	</div>
+	
+</window>
+</zk>

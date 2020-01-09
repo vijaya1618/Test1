@@ -1,0 +1,16 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="db" title="courses" width="100%"
+			minimizable="true" border="none" sclass="z" visible="true" use="com.lms.Student.ExamController">
+			<div>
+		
+				<listbox id="list"  width="100%" height="200px" onSelect="listitem.value=self.selectedItem.label"> 				 
+   				 </listbox>
+
+			</div>
+			<label id="listitem" style="display:none;"/>
+			<button id="StartExam" onClick="db.startExam()" label="Start Exam">
+			</button>
+		</window>
+</zk>

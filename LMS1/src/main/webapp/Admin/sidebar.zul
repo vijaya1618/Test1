@@ -1,0 +1,79 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+
+
+<grid hflex="1" height="100%" style="background-color:#3333339c;padding:0px">
+	<columns >
+		<column />
+		<column />
+	</columns>
+	<rows>
+		<row>
+			<cell align="center"
+				style="background-color: #3333339c;width: 45px; ">
+				<span Sclass="z-icon-home" style="content:\f015;color:black;font-size: 38px;" />
+			</cell>
+			<cell align="center" style="background-color: #3333339c;padding: 12px 12px;">
+				<label value="HOME PAGE"
+					style=" size:20px; color:#000000; ;cursor:pointer;" id="HomePage"
+					apply="com.lms.Admin.LogController" />
+			</cell>
+		</row>
+		<row>
+			<cell align="center" style="background-color:#3333339c; ">
+				<span Sclass="z-icon-file-o" style="content:\f015;color:black;    font-size: 38px;" />
+			</cell>
+			<cell align="center" style="background-color: #3333339c;padding: 12px 12px; ">
+				<label value="COURSES" id="UpdateCourses"
+					apply="com.lms.Admin.LogController"
+					style="color:#000000;cursor:pointer;" />
+			</cell>
+		</row>
+		<row>
+			<cell align="center" style="background-color: #3333339c;    font-size: 38px;">
+				<span Sclass="z-icon-inbox" style="content:\f015;color:black;"  />
+			</cell>
+			<cell align="center" style="background-color: #3333339c;padding: 12px 12px;">
+				<label id="ExamSchedule" value="EXAM SCHEDULE"
+					apply="com.lms.Admin.LogController"
+					style="color:#000000;cursor:pointer;" />
+			</cell>
+		</row>
+		<row>
+			<cell align="center" style="background-color: #3333339c;    font-size: 38px;">
+				<span Sclass="z-icon-comment" style="content:\f015;color:black;" />
+			</cell>
+			<cell align="center" style="background-color: #3333339c;padding: 12px 12px;">
+
+				<label id="StudentFeedback" value="STUDENT FEEDBACK"
+					apply="com.lms.Admin.LogController"
+					style="color:#000000;cursor:pointer;" />
+
+			</cell>
+		</row>
+		<row>
+			<cell align="center" style="background-color:#3333339c;    font-size: 38px;">
+				<span Sclass="z-icon-user" style="content:\f015;color:black;"  />
+			</cell>
+			<cell align="center" style="background-color:#3333339c;padding: 12px 12px;">
+
+				<label id="RegisteredUsers" value="REGISTERED USERS"
+					apply="com.lms.Admin.LogController"
+					style="color:#000000;cursor:pointer;" />
+
+			</cell>
+		</row>
+							<row>
+			<cell align="center" style="background-color:#3333339c;    font-size: 38px;">
+				<span Sclass="z-icon-sort-numeric-desc" style="content:\f015;color:black;"  />
+			</cell>
+			<cell align="center" style="background-color:#3333339c;padding: 12px 12px;">
+
+				<label id="UsersScores" value="USERS SCORE"
+					apply="com.lms.Admin.LogController"
+					style="color:#000000;cursor:pointer;" />
+
+			</cell>
+		</row>
+	
+	</rows>
+</grid>

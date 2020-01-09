@@ -1,0 +1,32 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="db" title="TUTOR PROFILE"
+		style="float:left;font-weight:bold;" visible="true" width="80%"
+		minimizable="true" use="com.lms.Tutor.Updatecontroller">
+		<separator height="20px"></separator>
+		<grid>
+			<rows>
+				<row>
+					<label value="Tutor id"></label>
+					<intbox id="id" width="150px" readonly="true"></intbox>
+				</row>
+				<row>
+					<label value="Firstname:"></label>
+					<textbox id="firstname" width="150px" />
+				</row>
+				<row>
+					<label value="Email"></label>
+					<textbox id="email" width="150px" />
+				</row>
+				<row>
+					<label value="Mobile"></label>
+					<longbox id="mobile" width="150px" maxlength="10" />
+				</row>
+			</rows>
+		</grid>
+		<separator></separator>
+		<div align="center">
+			<button label="Update" width="100px" height="35px" onClick="db.update()"/>
+		</div>
+	</window>
+</zk>

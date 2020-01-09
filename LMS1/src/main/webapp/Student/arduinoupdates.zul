@@ -1,0 +1,14 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Updates" border="normal" width="50%" closable="true">
+<separator></separator><separator></separator>
+
+<hbox>Course details and notes will be updated by June,2021.</hbox><separator></separator><separator></separator>
+<hbox>Arduino is on a mission to make technology accessible to everyone, and into the hands of every student and educator. To make this possible, we have created Arduino Education: a dedicated global team formed by education experts, content developers, engineers, and interaction designers.</hbox>
+
+<hbox>Arduino Education is focused on creating the next generation of STEAM programs — integrating Science, Technology, Engineering, Arts and Math — while supporting the needs of teachers and students throughout the educational journey.
+
+</hbox>
+</window>
+</zk>

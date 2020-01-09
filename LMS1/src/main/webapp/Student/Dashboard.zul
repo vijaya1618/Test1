@@ -1,0 +1,126 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="Dashboard" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.z-icon-trophy,.z-icon-graduation-cap,.z-icon-file-pdf-o{
+		margin-top:20px; font-size:60px;color:#4a573b; }
+		.a{
+		cursor:pointer;
+		color:#4a573b;
+		}
+		.userBg { 
+background-image:url('../imgs/stBg.jpg');
+background-size:100% 100%;
+ }
+ z-row{
+			    background: transparent;
+		}
+		.z-row-inner{
+		background: transparent;
+		}
+		.z-grid-body{
+		background: transparent;
+		}
+		
+		.z-grid .z-row-inner, .z-grid .z-cell{
+		background: transparent;
+		border-top:0px;
+		}
+		.z-row:hover>.z-row-inner{
+		background:transparent;
+		}
+		.z-row-content:hover>.z-label{
+		color:red;
+		}
+		.z-grid {
+		border:0px;
+		}
+				.z-window-noborder>.z-window-content {
+     		border: 0; 
+ 		   background: transparent;
+        padding-top: 22px;
+    		padding-left: 35px;
+
+}
+.z-groupbox-notitle .z-groupbox-content {
+   
+    padding: 16px;
+    background: transparent;
+    border: none;
+}
+.z{
+
+background-color:white;
+}
+	</style>
+	<window title="Student Dash Board" use="com.lms.Student.DashBoardCountCtrl" class="userBg" style="font-weight:bold;font-color:black" border="none" height="100%">
+		<grid style="border: 0;background:transparent;
+        padding-top:225px;padding-left:35px;">
+			<rows>
+				<row>
+					<groupbox width="200px" height="100px" style="padding: 16px;
+    background: transparent;
+    border: none;
+    padding-top:2px;">
+						<div style="height:80px;width:100%;">
+							<hbox>
+								<span sclass="z-icon-graduation-cap" style="margin-left:8px;"/>
+								<div>
+								 <label width="40px"  id="t1" value="26"></label> 
+								<label value="Courses" sclass="a"></label>
+								</div>
+							</hbox>
+						</div>
+					</groupbox>
+
+					<groupbox width="200px" height="100px">
+						<div style="height:80px;width:80%;">
+							<hbox>
+								<span sclass="z-icon-file-pdf-o" style="margin-left:8px;"/>
+								<div>
+								<label width="40px"  id="t2" value="26"></label> 
+								<label value="Materials" sclass="a"></label>
+								</div>
+							</hbox>
+						</div>
+					</groupbox>
+
+					<groupbox width="200px" height="100px">
+						<div style="height:80px;width:80%;">
+						<hbox>
+							<span style="margin-left:5px;"
+								sclass="z-icon-trophy" />
+								<div>
+								<label width="40px"  id="t3" value="26"></label> 
+								<label value="completed" sclass="a"></label>
+								</div>
+						</hbox>		
+						</div>
+					</groupbox>
+				</row>
+			</rows>
+		</grid>
+		<separator height="20px"></separator>
+		<grid>
+			<rows>
+				<row>
+					<label value="courses"
+						onClick="db.setVisible(true);" sclass="a" >
+					</label>
+			
+				</row>
+			</rows>
+		</grid>
+		<window id="db" title="Enrolled courses" width="100%"
+			minimizable="true" border="none" sclass="z" visible="false" use="com.lms.Student.Controller">
+			<div>
+				<listbox id="list"  width="100%" height="200px"> 				 
+   				 </listbox>
+
+			</div>
+		</window>
+		
+		
+	</window>
+
+</zk>

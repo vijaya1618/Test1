@@ -1,0 +1,115 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+.userBg { 
+background-image:url('../imgs/TutorHome6.jpg');
+background-size:100% 100%;
+ } 
+ .z-icon-user{
+ font-size: 30px;
+ }
+  .z-icon-book{
+ font-size: 45px;
+ }
+ .para {
+  text-shadow: 2px 2px 2px #114b59;
+  font-size:35px;
+}
+.z-icon-pencil-square-o{
+ font-size: 45px;
+ 
+}
+.z-icon-file-text{
+ font-size: 45px;
+}
+.z-icon-calendar{
+font-size: 45px;
+}
+.heading {
+
+  font-size:20px;
+ color:white;
+}
+.z-icon-times{
+font-size: 15px;
+}
+.z-window {
+padding:0px;
+background-color: #f9fcff;
+}
+ </style>
+<window id="taskListWnd"  border="normal" height="100%" width="100%" contentSclass="userBg"  contentStyle="overflow:auto;"
+use="com.lms.Tutor.TutorCardsInfo">
+<div align="right" style="margin-right:10%;">
+	<cardlayout   width="250px" height="150px" style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:rgba(14, 17, 21, 0.43);padding:20px">
+   
+   <div align="left">
+     <label class="heading" id="l1"/>   <html><![CDATA[
+       <br><br>
+        	
+    ]]></html>
+     <label class="heading" id="l2"/>
+   </div>
+    
+    
+ 		<span sclass="z-icon-user"></span>		
+ 	
+    </div> 
+</cardlayout>
+</div>
+<separator/>
+<div align="right" style="margin-right:10%;">
+	<cardlayout   width="250px" height="150px" style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:rgba(14, 17, 21, 0.43);padding:20px">
+ 				  <div align="left">
+     <label class="heading" id="l3"/>
+      <html><![CDATA[
+       <br><br>
+        	
+    ]]></html>
+     <label class="heading" id="l4"/>
+   </div>
+ 				<span sclass="z-icon-book"></span>	
+    </div> 
+</cardlayout>
+</div>
+<separator/>
+<div align="right" style="margin-right:10%;">
+	<cardlayout    width="250px" height="150px"  style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:rgba(14, 17, 21, 0.43);padding:20px">
+ 			  <div align="left">
+     <label class="heading" id="l5"/>
+      <html><![CDATA[
+       <br><br>
+        	
+    ]]></html>
+     <label class="heading" id="l6"/>
+   </div>
+ 			<span sclass="z-icon-file-text"></span>
+    </div> 
+</cardlayout>
+</div>
+<separator/>
+<div align="right" style="margin-right:10%;">
+	<cardlayout   width="250px" height="150px" style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:rgba(14, 17, 21, 0.43);padding:20px">
+ 				   <div align="left">
+     <label class="heading" id="l7"/>
+      <html><![CDATA[
+       <br><br>
+        	
+    ]]></html>
+     <label class="heading" id="l8"/>
+   </div>
+ 				<span sclass="z-icon-pencil-square-o"></span>	
+    </div> 
+</cardlayout>
+
+</div>
+<div align="left">
+
+</div>
+</window>
+</zk>

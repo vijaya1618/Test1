@@ -1,0 +1,141 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+<style> 
+.example1 {
+  border: 1px solid;
+  
+  padding: 10px;
+  box-shadow: 5px 10px 20px #2c271e;
+}
+.example2 {
+  color: snuff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.winBg { 
+background-image:url('../imgs/adminbg4.jpg');
+background-size:100% 100%;
+ } 
+rect{
+width:0px;
+height:0px;
+}
+.para {
+  text-shadow: 2px 2px 2px #114b59;
+  font-size:35px;
+}
+.z-window {
+padding:0px;
+background-color: #f9fcff;
+}
+
+</style>
+<window  contentSclass="winBg" width="100%" height="100%" contentStyle="overflow:auto;">
+<div use="com.lms.Admin.ChartLabelCtrl">
+ <html><![CDATA[
+        <h1 align="left" class="heading">Dashboard</h1>
+    ]]></html>
+<vbox  align="left" width="100%" height="100%">
+			<separator/>
+<hbox>	
+<separator/>			
+	<cardlayout   width="200px" height="100px" style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:#7cb5ec;padding:20px">
+    <html><![CDATA[
+        <p align="center" class="para" style="color:white;font-size:20px">Students
+        	 </p>
+    ]]></html>
+      <div align="left">
+     <label class="heading" id="l1" style="padding-left:62px;color:white;font-size:23px"/>   <html><![CDATA[
+
+    ]]></html>
+   </div>
+    
+    </div>
+  
+</cardlayout>
+<separator/>
+<cardlayout  width="200px" height="100px" style="padding-left:20px;"  >
+    <div vflex="1" hflex="1" style="background-color:#434348;padding:20px">
+    
+        <html><![CDATA[
+        <p align="center" style="color:white;font-size:20px">Tutors
+    	 </p>
+    ]]></html>
+      <div align="left">
+     <label class="heading" id="l2" style="padding-left:73px;color:white;font-size:23px"/>   <html><![CDATA[
+      
+        	
+    ]]></html>
+   </div>
+    
+    
+    </div>
+  
+</cardlayout>
+<separator/>
+<cardlayout   width="200px" height="100px" style="padding-left:20px;"  >
+    <div vflex="1" hflex="1" style="background-color:#90ed7d;padding:20px">
+    
+        <html><![CDATA[
+        <p align="center" style="color:white;font-size:20px">Courses
+        		
+    	</p>
+    ]]></html>
+   
+      <div align="left">
+     <label class="heading" id="l3" style="padding-left:65px;color:white;font-size:23px"/>   <html><![CDATA[
+      
+        	
+    ]]></html>
+   </div>
+    
+    
+    </div>
+  
+</cardlayout>
+<separator/>
+<cardlayout   width="200px" height="100px" style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:#f7a35c;padding:20px"><html><![CDATA[
+        <p align="center" style="color:white;font-size:20px">Exams
+        		
+    	 </p>
+    ]]></html>
+      <div align="left">
+     <label class="heading" id="l4" style="padding-left:73px;color:white;font-size:23px"/>   <html><![CDATA[
+     
+        	
+    ]]></html>
+   </div>
+   </div>
+  
+</cardlayout>
+<separator/>
+<cardlayout   width="200px" height="100px" style="padding-left:20px;" >
+    <div vflex="1" hflex="1" style="background-color:#8085e9;padding:20px"><html><![CDATA[
+        <p align="center" style="color:white;font-size:20px">Reports
+        		
+    	 </p>
+    ]]></html>
+      <div align="left">
+     <label class="heading" id="l5" style="padding-left:73px;color:white;font-size:23px"/>   <html><![CDATA[
+     
+        	
+    ]]></html>
+   </div>
+    
+    
+    
+    
+   </div>
+  
+</cardlayout>
+</hbox>	
+</vbox>
+</div>
+<div apply="com.lms.Admin.PieLegendComposer">
+   <charts id="chart" type="pie" style="padding-left:0px;margin-left:-8%" title="Progress till now"/>
+</div>
+
+</window>
+
+</zk>

@@ -1,0 +1,23 @@
+
+<?page title="Reenter" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="db" title="Change Password" border="none" width="80%" use="com.lms.Student.PasswordController">
+		<grid>
+			<rows>
+				<row>
+					<label value="Password"></label>
+					<textbox id="password" type="password"></textbox>
+				</row>
+				<row>
+					<label value="Confirm password"></label>
+					<textbox id="cpassword" type="password"></textbox>
+				</row>
+			</rows>
+		</grid>
+		<separator height="20px"></separator>
+		<div align="center">
+			<button id="Update" label="Update" onClick="db.Updatepassword()">
+			</button>
+		</div>
+	</window>
+</zk>

@@ -1,0 +1,76 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="Exam Schedule" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+
+	<style>
+		.z-label{ font-family: Trebuchet MS; font-size: 14pt;
+		color:black; }
+.z-icon-user{
+ font-size: 30px;
+ }
+	</style>
+	<div
+		style="background-image: url(../imgs/tutorexam.jpg);background-size: 100% 100%;">
+		<label value="EXAM ENTRY"
+			style="font-family:Trebuchet MS;font-size:14pt;text-align:right;" />
+
+		<div sclass="container" id="db"
+			use="com.lms.Tutor.ExamScheduleController"
+			style="padding-left: 85px;
+
+    background-size: 100% 100%;
+    padding-bottom: 300px;
+    padding-bottom: 35%;
+    padding-top: 9%;
+    font-family:Trebuchet MS;font-size:14pt;">
+
+			<vbox spacing="1em">
+				<hbox>
+					<label value="Enter Tutor Id:"
+						style="font-family:Trebuchet MS; " />
+					<space width="52px" />
+					<intbox width="200px" id="Tutorid"
+						sclass="ftextbox" />
+				</hbox>
+				<hbox>
+					<label value="Enter Tutor Name:"
+						style="font-family:Trebuchet MS; " />
+					<space width="26px" />
+					<textbox width="200px" id="TutorName"
+						sclass="ftextbox" />
+				</hbox>
+				<hbox>
+					<label value="Enter Exam Name:"
+						style="font-family:Trebuchet MS; " />
+					<space width="26px" />
+					<textbox width="200px" id="ExamName"
+						sclass="ftextbox" />
+				</hbox>
+
+				<hbox>
+					<label value="Enter Subject Name:"
+						style="font-family:Trebuchet MS; " />
+					<space width="10px" />
+					<textbox width="200px" id="SubName"
+						sclass="ftextbox" />
+				</hbox>
+
+				<hbox>
+					<label value="Enter Exam Marks:"
+						style="font-family:Trebuchet MS;" />
+					<space width="25px" />
+					<intbox width="200px" id="Marks" sclass="ftextbox" />
+				</hbox>
+				<hbox>
+					<space width="150px" />
+					<button id="ExamSchedule" label="Submit"
+						onClick="db.ExamEntry()"
+						style=" border-color:#333; mold:trendy; text-align: center; margin-right:200px; background-color: #37A8AF;"
+						width="100px" />
+				</hbox>
+
+			</vbox>
+		</div>
+	</div>
+</zk>

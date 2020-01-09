@@ -1,0 +1,12 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Updates" border="normal" width="50%" closable="true">
+<separator></separator><separator></separator>
+
+<hbox>Course details and notes will be updated by May,2020.</hbox><separator></separator><separator></separator>
+<hbox>It is not only a fabulous discipline for building a career around, it is one of the most valuable life-skills you can acquire.</hbox><separator></separator>
+
+<hbox>But if you had to be selective, and needed to focus on just ten things, what would they be? I have around twenty years of experience in training project management courses, and delivering projects, so I have thought about this carefully. Even so, it’s a difficult challenge. But, just for you, I have finally honed my list down to the ten critical things to learn about project management.</hbox>
+</window>
+</zk>

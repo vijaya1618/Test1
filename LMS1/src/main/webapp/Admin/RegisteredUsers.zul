@@ -1,0 +1,60 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.userBg { background-image:url('../imgs/users2.jpg');
+		background-size:100% 100%; } .heading { text-shadow: 10px 10px
+		10px #FF0000; font-size:35px; }
+
+
+		  .z-listheader,.z-listitem,.z-listbox-header,.z-listbox-odd,.z-listcell,.z-listbox,.z-listcell
+		{ 
+		
+		background:transparent; 
+		border:1px solid;
+		 }
+		
+
+		
+		
+		.z-listitem .z-listcell {
+		background:#fff0;
+		}
+	
+
+
+
+.z-listbox-body {
+    background:#fff0;
+}
+.z-listheader-content {
+color:black;
+}
+.z-window {
+
+padding:0px;
+}
+	</style>
+	<window id="taskListWnd" border="normal"
+		height="100%" width="100%" contentSclass="userBg"
+		use="com.lms.Admin.RegisteredUsersInfo">
+		<div align="left">
+		
+			<listbox id="taskslb" width="730px">
+				<listhead>
+					<listheader > <label value="ID" style="color:black;font-weight:bold;font-size:15px"></label></listheader>
+					<listheader > <label value="NAME" style="color:black;font-weight:bold;font-size:15px"></label></listheader>
+					<listheader > <label value="MAIL" style="color:black;font-weight:bold;font-size:15px"></label></listheader>
+					<listheader > <label value="GENDER" style="color:black;font-weight:bold;font-size:15px"></label></listheader>
+					<listheader > <label value="DESIGNATION" style="margin-left:-5px;color:black;font-weight:bold;font-size:15px"></label></listheader>
+					<listheader > <label value="MOBILE" style="color:black;font-weight:bold;font-size:15px"></label></listheader>
+				</listhead>
+			</listbox>
+			<hbox>
+			
+				
+				<button label="Delete" onClick="taskListWnd.onDelete()" />
+			</hbox>
+		</div>
+	</window>
+</zk>

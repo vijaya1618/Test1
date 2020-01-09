@@ -1,0 +1,47 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+.i{
+background-image:url('../imgs/mark1.jpg');
+background-size:100% 100%;
+background-repeat: no-repeat;
+}  
+
+.li {background: transparent;}
+.l{
+  border: 1px solid black;
+}
+.z-listheader{background:#349cbb;}
+
+	.z-window {
+  
+    padding: 0px;
+    background-color: #f9fcff;
+}
+
+ </style>
+<window id="marks"  border="normal" height="100%" width="100%" contentSclass="i"
+  use="com.lms.Admin.TotalmarksController" contentStyle="overflow:auto;">
+  <div height="20px">
+  	<html><![CDATA[
+        <h1 align="left" class="subdiv">Marks:</h1>
+    ]]></html>
+  </div>
+  <div height="15px">
+  </div>
+  <div align="left">
+	
+	<listbox id="taskslb" width="400px" zclass="li" >
+		<listhead>
+			
+			<listheader label="Student_id"/>
+			<listheader label="exam_name"/>
+			<listheader label="marks"/>
+			
+			</listhead>
+	</listbox>
+
+</div>
+</window>
+</zk>

@@ -1,0 +1,15 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+<window title="Updates" border="normal" width="50%" closable="true" >
+<separator/><separator/>
+
+<hbox >Course details and notes will be updated by March,2020.</hbox><separator/><separator/><separator/>
+<hbox >Python, widely used for web development, is quickly catching up to Java in overall popularity. The language is widely used in scientific computing, data mining, and machine learning — which is where the growth in demand is coming from.</hbox>
+
+
+</window>
+
+
+</zk>

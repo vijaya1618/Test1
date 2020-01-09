@@ -1,0 +1,36 @@
+<window id="db1" title="TUTOR REGISTRATION FORM"
+			style="float:left" visible="true" width="100%" minimizable="false">
+			<separator height="20px"></separator>
+
+			<grid>
+				<rows>
+					<row>
+						<label value="Firstname:"></label>
+						<textbox id="firstname" width="150px" />
+
+						<label value="Email"></label>
+						<textbox id="email" width="150px" />
+					</row>
+
+					<row>
+						<label value="Mobile"></label>
+						<longbox id="mobile" width="150px"
+							maxlength="10" />
+					</row>
+					<row>
+						<label value="Password"></label>
+						<textbox id="password" type="password"
+							width="150px" />
+
+						<label value="Confirm Password"></label>
+						<textbox id="cpassword" type="password"
+							width="150px" />
+					</row>
+				</rows>
+			</grid>
+			<separator></separator>
+			<div align="center">
+				<button label="Submit"
+					width="100px" height="30px" />
+			</div>
+		</window>

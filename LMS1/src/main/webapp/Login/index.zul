@@ -1,0 +1,194 @@
+<?page title="Welcome" contentType="text/html;charset=UTF-8"?>
+
+<zk >
+
+<style src="style.css"/>
+	<style>
+		.color1{ background-color:#333;     color: powderblue; border: aliceblue;} 
+.image{background-image:url("l.png");
+background-repeat:no-repeat;
+background-size:100% 100%; 
+}
+img { 
+    margin-top: -20px;
+    width: 190px;
+    height: 135px;
+    margin-left: -30px;
+
+}
+.v{ margin-top: 20px;}
+.img1{margin-top: 23px;}
+.a{ margin-top: 23px;
+  }
+.t{background-color: #76a2c1;
+border-radius:30px;
+ margin-top: 23px;}
+.color1 after{}
+.h{ iconSclass="z-icon-user" }
+
+
+.z-icon-tasks{
+font-size: 30px;
+color: white;
+    padding-top: 30px;
+    padding-right: 8px;
+}
+.z-window {
+    overflow: hidden;
+    zoom: 1;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    padding: 0px;
+    background-color: #08070873;
+}
+.z-window-content {
+    padding: 16px;
+    background: #fff0;
+    color: rgba(0,0,0,0.9);
+    overflow: hidden;
+    zoom: 1;
+}
+.z {
+    padding: 26px;
+    background: #fff0;
+    radius: 10;
+}
+ 
+ .z-window-header {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color:white;
+    line-height: 24px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    zoom: 1;
+    cursor: default;
+}
+ 
+
+ .z-label{
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+.z-icon-user:before {
+    content: "\f007";
+    color:white;
+    font-size: 19px;
+}
+.z-icon-lock:before {
+    content: "\f023";
+    color: white;
+    font-size: 19px;
+}
+.z-row{
+			    background: transparent;
+		}
+		.z-row-inner{
+		background: transparent;
+		}
+		.z-grid-body{
+		background: transparent;
+		}
+		
+		.z-grid .z-row-inner, .z-grid .z-cell{
+		background: transparent;
+		border-top:0px;
+		}
+		.z-row:hover>.z-row-inner{
+		background:transparent;
+		}
+		.z-row-content:hover>.z-label{
+		color:red;
+		}
+		.z-grid {
+		border:0px;
+		}
+		
+		.z-panel {
+		overflow: hidden;
+    zoom: 1;
+    padding: 0;
+    background:transaparent;
+    }
+
+   .z-errorbox{
+		    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+		
+		}
+		
+		@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+	</style>
+
+	<borderlayout>
+
+		<north maxsize="200" size="15%" sclass="color1" id="login">
+			<hbox vflex="min">
+			<space width="10px"/>
+			
+			<image src="/imgs/logo3.png"/>
+			<space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/>
+			 <separator></separator>
+			 
+			
+			<space/><space/><space/><space/><space/><space/>
+				
+				
+				<div use="com.lms.Login.ComboController" id="course">
+				<combobox sclass="a" height="35px"  width="150%" placeholder="Search" id="cm" onSelect="course.user()" >
+					<comboitem height="25px" style="font:18px" label="java"  />
+					<comboitem label="c" width="50%"/>
+					<comboitem label="c++" width="50%"/>
+				</combobox>
+			</div>
+	
+			
+				<space/><space/><space/>
+			<label></label>
+							
+				<hbox>
+				<space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/><space/>
+			
+ 		<button  id="log" apply="com.lms.example1.LogController" label="SIGN IN" sclass="t"/>
+         <space/><space/><space/>
+         <button id="register" apply="com.lms.example1.LogController" label="SIGN UP" sclass="t"/>
+         
+         </hbox>
+
+			</hbox>
+		</north>
+		
+		<center sclass="image">
+		<include src="" id="x"></include>
+</center>
+<south sclass="color1">
+
+<div align="center">
+<hbox>
+<button zclass="color1" label="About us" apply="com.lms.example1.logincontroller" id="about"  />
+<button zclass="color1" label="Contact us" apply="com.lms.example1.logincontroller" id="contact"/>
+
+</hbox>
+<hbox>
+<label style="color:red;" value="All Rights are Reserved"></label>
+<a href="https://www.pennanttech.com">www.pennanttech.com</a>
+</hbox>
+</div> 
+</south>
+		
+	</borderlayout>
+	</zk>

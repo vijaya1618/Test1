@@ -1,0 +1,20 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+<window id="win" title="LOGIn form" width="600px" border="normal" >
+   <div>
+  <span sclass="z-icon-user" />
+               	Username:<textbox  id="name"  constraint="no empty: Please enter your full name" />
+               	</div>
+               	<separator></separator>
+               	<div>
+            	<span sclass="z-icon-lock" />
+              Password : <textbox id="pwd" type="password" />
+              <span sclass="z-icon-eye-slash" />
+              <separator></separator>
+               
+                    <button label="Submit"  width="100px"></button>
+                    </div>
+  
+   
+</window>
+</zk>

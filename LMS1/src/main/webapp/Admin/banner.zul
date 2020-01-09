@@ -1,0 +1,21 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<div id="banner" hflex="1" style="background-color: #333333a1;color: white;padding:8px 8px;" use="com.lms.Admin.BannerController">
+	<hbox hflex="1" align="center">
+		<a href="http://www.zkoss.org/">
+		<image src="/imgs/logo3.png" style="width: 160px;
+    height: 140px;" />
+		</a>
+
+		<hbox hflex="1" vflex="1" pack="end" align="end" style="padding-right:40px">
+		<menubar>
+		<menu id="name" style="width:145px;" 
+							iconSclass="z-icon-user">
+							<menupopup>
+								<menuitem label="logout" onClick="banner.logOut()" iconSclass="z-icon-user" 
+									style="width:145px;background-color:skyblue;" />
+							</menupopup>
+		</menu>
+		</menubar>		
+		</hbox> 
+	</hbox>
+</div>

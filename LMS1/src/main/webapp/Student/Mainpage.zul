@@ -1,0 +1,106 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.label{ color:white; font-weight:bold; font-family:Trebuchet MS;cursor:pointer;
+		}
+		.z-center-body{
+		    padding: 0px;
+		}
+			.z-west-body {
+    line-height: 16px;
+    padding: 0px;
+    color: rgba(0,0,0,0.9);
+}
+.auto{
+overflow:auto;
+
+}
+		 img { 
+    margin-top: -20px;
+    width: 177px;
+    height: 155px;
+    margin-left: -16px;
+
+}
+	</style>
+	<div height="100%" apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm1') @init('com.lms.Student.Controller')">
+		<borderlayout>
+			<north height="17%" style="background-color:skyblue;">
+		
+				<hbox>
+				<image src="/imgs/logo3.png" />
+					<label value="Learning Managment System"
+						style="font-weight:bold;font-size:20px;margin-left:380px;">
+					</label>
+					<menubar id="menubar" orient="horizontal"
+						style="background-color:skyblue;border-color:skyblue;margin-left:100px;margin-top:35px;width:500px;height:50px;">
+						<menu label="@load(vm1.x)" style="width:250px;" onClick="@command('profile')"
+							iconSclass="z-icon-user">
+							<menupopup>
+								<menuitem label="logout"  iconSclass="z-icon-user" onClick="@command('logout')"
+									style="width:240px;background-color:skyblue;" />
+							</menupopup>
+						</menu>
+					</menubar>
+				</hbox>
+			</north>
+			<west style="background-color:skyblue" width="16%">
+				<grid style="border:none">
+					<rows>
+						<row style="background-color:#008fb3"
+							onClick="@command('dashboard')">
+							<span Sclass="z-icon-tachometer" style="content:\f015;color:black;font-size: 38px;" />
+							<label sclass="label" value="Dashboard">
+							</label>
+						</row>
+						<row style="background-color:#008fb3"
+							onClick="@command('courses')">
+								<span Sclass="z-icon-language" style="content:\f015;color:black;font-size:38px;" />
+							<label sclass="label" value="courses">
+							</label>
+						</row>
+						<row style="background-color:#008fb3"
+							onClick="@command('materials')">
+								<span Sclass="z-icon-book" style="content:\f015;color:black;font-size:38px;" />
+							<label sclass="label" value="materials">
+							</label>
+						</row>
+					
+						<row style="background-color:#008fb3"
+							onClick="@command('courseNews')">
+								<span Sclass="z-icon-newspaper-o" style="content:\f015;color:black;font-size: 38px;" />
+							<label sclass="label" value="CourseNews">
+							</label>
+						</row>
+						<row style="background-color:#008fb3"
+							onClick="@command('exam')">
+								<span Sclass="z-icon-pencil-square-o" style="content:\f015;color:black;font-size: 38px;" />
+							<label sclass="label" value="Exams">
+							</label>
+						</row>
+						<row style="background-color:#008fb3"
+							onClick="@command('status')">
+								<span Sclass="z-icon-spinner" style="content:\f015;color:black;font-size: 38px;" />
+							<label sclass="label" value="Status">
+							</label>
+						</row>
+						<row style="background-color:#008fb3"
+							onClick="@command('feedback')">
+							<span Sclass="z-icon-comment" style="content:\f015;color:black;font-size: 38px;" />
+							<label sclass="label" value="feedback">
+							</label>
+						</row>
+					</rows>
+				</grid>
+			</west>
+			<center sclass="auto">
+				<include id="myaccountprofilecontent" mode="instant"
+					sclass="content" src="@load(vm1.statement)" />
+			</center>
+		</borderlayout>
+	</div>
+
+</zk>
+

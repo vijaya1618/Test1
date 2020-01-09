@@ -1,0 +1,18 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window border="none" use="com.lms.Student.DisplayMarksCtrl">
+  <div align="right" style="margin-right:10%;">
+	
+	<listbox id="marks" width="600px">
+		<listhead>
+			<listheader label="EXAM NAME" />
+			<listheader label="MARKS" />
+			</listhead>
+	</listbox>
+	</div>
+	<div height="5px">
+	
+	</div>
+</window>
+</zk>

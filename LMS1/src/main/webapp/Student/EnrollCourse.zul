@@ -1,0 +1,38 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="db" title="Enroll Courses" minimizable="true" border="none"
+		width="80%" height="80%" use="com.lms.Student.ViewController">
+
+		<grid>
+			<rows>
+				<row>
+					<label value="Course id"></label>
+					<intbox id="id" readonly="true"></intbox>
+				</row>
+				<row>
+					<label value="Course Name"></label>
+					<textbox id="name" readonly="true"></textbox>
+				</row>
+				<row>
+					<label value="Course Duration"></label>
+					<intbox id="duration" readonly="true"></intbox>
+				</row>
+				<row>
+					<label value="Department id"></label>
+					<intbox id="deptid" readonly="true"></intbox>
+				</row>
+				<row>
+					<label value="Select Tutor"></label>
+					<combobox id="select">					
+					</combobox>
+				</row>
+			</rows>
+		</grid>
+		
+		<separator height="20px"></separator>
+		<div align="center">
+		<button id="submit" label="Enroll" onClick="db.enrollcourse()"></button>
+		</div>
+	</window>
+</zk>

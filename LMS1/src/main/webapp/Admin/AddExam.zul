@@ -1,0 +1,78 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+
+
+<window  title="Exam Entry" id="resultWin"  width="500px" border="normal" use="com.lms.Admin.AddExamController" 
+closable="true">
+    <grid>
+      <columns>
+                <column label="Register Here" width="120px" />
+                <column />                
+            </columns>
+            <rows>
+                <row>
+                Examname:
+                    <hlayout>
+                        <textbox tabindex="1" id="examname"/>
+                    </hlayout>
+                </row>
+                <row>
+                subject:
+                    <hlayout>
+                        <textbox tabindex="2" id="subjectname"/>
+                    </hlayout>
+                 
+                </row>
+             
+                <row>
+                   Examination Date:
+                    <hbox>
+                        <datebox id="examdate" tabindex="7"/>
+                    </hbox>
+                </row>
+               
+                 <row>
+                Marks:
+                    <hlayout>
+                        <intbox tabindex="2" id="marks"/>
+                    </hlayout>
+                 
+                </row>
+        
+              		</rows>
+      </grid>
+              
+   
+ 
+            <hbox width="100%" pack="center">
+            <button id="submit2" label="RESET" iconSclass="z-icon-refresh" onClick="resultWin.onButton()"/>
+        <button id="submit" label="ADD" onClick="resultWin.addExam()"/>
+       
+     		  <button id="delete" label="DELETE EXAMS" onClick="resultWin.onDelete()"/>
+     		  <button id="update" label="Update" onClick="resultWin.onUpdateEdit()"/>
+     		  <button id="editSave" label="EditSave" visible="false" onClick="resultWin.onUpdate()"/>
+    </hbox>		 
+
+  	<html><![CDATA[
+        <h4>EXAMS ASSIGNED</h4>
+        <p>Update & delete data by selecting field and click buttons...</p>
+   
+    ]]></html>
+ 
+     
+      	<div align="right" style="margin-right:10%">
+	<listbox id="addedExams" width="500px">
+		<listhead>
+			<listheader label="EXAM ID"/>
+		<listheader label="EXAM NAME"/>
+			<listheader label="SUBJECT" />
+			<listheader label="EXAM DATE" />
+			<listheader label="MARKS" />
+			</listhead>
+	</listbox>
+	
+	</div>
+	
+	
+</window>
+</zk>

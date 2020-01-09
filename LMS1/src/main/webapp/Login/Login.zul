@@ -1,0 +1,112 @@
+
+<zk>
+
+	<window width="600px" closable="true" 
+		height="400px" id="i" >
+		<radiogroup id="account">
+			<radio value="ByDate"
+				onClick="db.setVisible(true);db1.setVisible(false);db2.setVisible(false)"
+				label="Student" style="color:white;font-size:22px;" zclass="radio">
+			</radio>
+			<space width="100px" />
+			<radio value="ByMonth"
+				onClick="db1.setVisible(true);db.setVisible(false);db2.setVisible(false)"
+				label="Tutor"  style="color:white;font-size:22px;"  zclass="radio" id="ByMonth">
+			</radio>
+			<space width="100px" />
+			<radio value="ByMonth"
+				onClick="db2.setVisible(true);db.setVisible(false);db1.setVisible(false)"
+				label="Admin" style="color:white;font-size:22px;"  zclass="radio" id="ByYear">
+			</radio>
+			<space width="205px" />
+		</radiogroup>
+		<separator height="20px"></separator>
+		<?link rel="stylesheet" type="text/css" href="/style.css"?>
+		<window id="db" title="STUDENT LOGIN FORM" width="100%"
+			 border="none" sclass="z" visible="false"
+			use="com.lms.Login.Logincontroller" onOk="db.Validate()">
+			<div>
+				<span sclass="z-icon-user" />
+				<label value="Username:"/>
+				<textbox id="name" constraint="no empty" />
+			</div>
+			<separator></separator>
+			<div>
+				<span sclass="z-icon-lock" />
+				<label value="Password:" style="padding-left:5px"/>
+				<textbox id="pwd" style="margin-left:5px"
+					type="password" />
+
+				<separator></separator>
+				<a href="/Student/password.zul" id="ForgotPassword "
+					label="forget password" autodisable="ok,cancel" height="5px" />
+				<space></space>
+				<space></space>
+				<button label="Student" id="submitbutton" width="100px"
+					onClick="db.Validate();i.detach()" sclass="t">
+				</button>
+			</div>
+		</window>
+		<?link rel="stylesheet" type="text/css" href="/style.css"?>
+		<window id="db1" title="TUTOR LOGIN FORM" width="100%"
+			border="none" sclass="z" visible="false"
+			use="com.lms.Login.Logincontroller">
+
+			<div>
+				<span sclass="z-icon-user" />
+				<label value="Username:"/>
+				<textbox id="name" constraint="no empty" />
+			</div>
+			<separator></separator>
+			<div>
+				<span sclass="z-icon-lock" />
+				<label value="Password:" style="padding-left:5px"/>
+				<textbox id="pwd" type="password"
+					style="margin-left:5px" />
+
+
+
+
+				<separator></separator>
+
+				<div>
+					<a href="/Student/password.zul" id="ForgotPassword "
+						label="forget password" autodisable="ok,cancel" height="5px" />
+					<space></space>
+					<space></space>
+					<button label="Tutor" id="submitbutton"
+						onClick="db1.Validate();i.detach()" width="100px" sclass="t">
+					</button>
+				</div>
+
+			</div>
+		</window>
+		<?link rel="stylesheet" type="text/css" href="/style.css"?>
+		<window id="db2" title="ADMIN LOGIN FORM" width="100%"
+		border="none" sclass="z" visible="false"
+			use="com.lms.Login.Logincontroller">
+			<div>
+				<span sclass="z-icon-user" />
+					<label value="Username:"/>
+				<textbox id="name" constraint="no empty" />
+			</div>
+			<separator></separator>
+			<div>
+				<span sclass="z-icon-lock" />
+				<label value="Password:" style="padding-left:5px"/>
+				<textbox id="pwd" type="password"
+					style="margin-left:4px" />
+
+				<separator></separator>
+				<a href="/Student/password.zul" id="ForgotPassword "
+					label="forget password" autodisable="ok,cancel" height="5px" />
+				<space></space>
+				<space></space>
+				<button label="Admin" id="submitbutton" width="100px"
+					onClick="db2.Validate();i.detach()" sclass="t">
+				</button>
+			</div>
+		</window>
+
+	</window>
+</zk>

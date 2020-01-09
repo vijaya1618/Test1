@@ -1,0 +1,40 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+<style> 
+.imageDiv {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 30px 30px 0 0;
+    border: 3px solid #DDDDDD;  
+} 
+.i{
+background-image:url('../imgs/next.jpg');
+background-size:100% 100%;
+background-repeat: no-repeat;
+}  
+.c{
+font-size: 40px;
+}
+</style>
+<window contentSclass="i" width="100%" height="100%">
+
+<label sclass="c"> What's next to learn...?</label>
+
+<separator></separator>
+<space /><space /><space /><space /><div Sclass="imageDiv">
+<image src="/imgs/python.jpg" id="py" apply="com.lms.Student.NewsController" width="100%" height="100%" onClick=""/></div><space /><space /><space />
+
+<div Sclass="imageDiv">
+<image src="/imgs/linux.jpg" id="li" apply="com.lms.Student.NewsController"  width="100%" height="100%" onClick=""/></div><space /><space /><space />
+
+<div Sclass="imageDiv">
+<image src="/imgs/project.jpg" id="pm" apply="com.lms.Student.NewsController"  width="100%" height="100%" onClick=""/></div><space /><space /><space />
+
+<div Sclass="imageDiv">
+<image src="/imgs/arduino.jpg" id="ar" apply="com.lms.Student.NewsController"  width="100%" height="100%" onClick=""/></div><space /><space /><space />
+
+
+</window>
+</zk>

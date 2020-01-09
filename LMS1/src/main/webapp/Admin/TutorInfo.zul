@@ -1,0 +1,17 @@
+
+
+<window use="com.lms.Admin.TutorListWnd" id="mywin" title="Tutor List"  contentStyle="overflow:auto" closable="true">
+	<vbox>
+	<hbox><label value="TUTOR LIST"/></hbox>
+	<listbox id="TutorList" width="490px" height="200px"  nonselectableTags="*" rows="20">
+		<listhead>
+			<listheader label="Tutor Id" width="150px"/>
+			<listheader label="Tutor Name"/>
+			<listheader label="Tutor Mobile No"/>
+			
+		</listhead>
+		
+	</listbox>
+	
+	</vbox>
+</window>

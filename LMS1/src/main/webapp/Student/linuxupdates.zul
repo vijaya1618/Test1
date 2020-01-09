@@ -1,0 +1,12 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Updates" border="normal" width="50%" closable="true">
+<separator></separator><separator></separator>
+
+<hbox>Course details and notes will be updated by June,2020.</hbox><separator></separator><separator></separator>
+<hbox>Learning Linux lead me into developing an interest in computers and how they operate. It was not long after that I was completely hooked to Linux — Working on a remote computer(through SSH) and transferring files without internet connection ( through Samba server) seemed like magic to me. I started writing scripts for automation and used to set reminders (cron jobs).</hbox>
+
+
+</window>
+</zk>

@@ -1,0 +1,63 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+
+<style>
+
+.userBg { 
+background-image:url('../imgs/courseBg3.jpg');
+background-size:100% 100%;
+ }
+
+		  .z-listheader,.z-listitem,.z-listbox-header,.z-listbox-odd,.z-listcell,.z-listbox,.z-listcell
+		{ 
+		
+		background:transparent; 
+		border:1px solid;
+		 }
+		
+
+		
+		
+		.z-listitem .z-listcell {
+		background:#fff0;
+		}
+	
+
+
+
+.z-listbox-body {
+    background:#fff0;
+}
+.z-listheader-content {
+color:black;
+}
+.z-window-content {
+padding:0px;
+    background: #fff0;
+    color: rgba(0,0,0,0.9);
+}
+</style>
+	<window title="courses" class="userBg" border="none" id="loan" use="com.lms.Student.Coursecontroller" contentStyle="overflow:auto;">
+		<listbox id="course" width="700px" height="700px">
+			<listhead>
+				<listheader label="course id"></listheader>
+				<listheader label="course name"></listheader>
+				<listheader label="Course duration"></listheader>
+				<listheader label="department id"></listheader>
+				<listheader label="course Enroll"></listheader>
+			</listhead>
+			<template name="model">
+			<listitem>
+			<listcell label="${each.courseid} "></listcell>
+			<listcell label="${each.coursename }"></listcell>
+			<listcell label="${each.courseduration }"></listcell>
+			<listcell label="${each.departmentid} "></listcell>
+			<listcell><button id="${each.courseid}" onClick="loan.Courselogin(self.getId())" label="Enroll"></button></listcell>
+			</listitem>		
+			</template>
+		</listbox>
+		
+		
+	
+	</window>
+</zk>

@@ -1,0 +1,31 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window  border="normal" class="window" use="com.lms.Student.QuestionController"  id="p">
+<style>
+.window{
+    margin-top:300px;
+    margin-left: 500px;
+    margin-right:450px;
+    margin-bottom:10px;
+    }
+    .label
+    {
+     margin-top:10px;
+    margin-left: 30px;
+    }
+    .button
+    {
+     margin-top:20px;
+    margin-left: 130px;
+    }
+</style>
+<div class="label">
+<hbox  class="label">
+<label >Your answers successfully submitted</label>
+</hbox>
+<hbox class="button">
+<button label="ok" onClick="p.method()"/></hbox>
+</div>
+</window>
+</zk>

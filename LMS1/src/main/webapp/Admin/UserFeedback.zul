@@ -1,0 +1,32 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+
+<?page title="User Feedback"?>
+<zk>
+<style>
+  .z-listbox-body{
+    background: #fff0;
+    
+    }
+    
+    .z-listitem>.z-listcell {
+    background: #fff0;
+    position: relative;
+    }
+    
+    </style>
+<div use="com.lms.Admin.FeedbackListWnd" style="background-image:url('../imgs/feedback3.jpg');background-size:100% 100%;">
+	<vbox>
+	<hbox><label value="User Feedback"/></hbox>
+	<hbox><listbox id="FeedbackList" width="490px" height="700px">
+		<listhead>
+			<listheader label="Student Id" width="150px"/>
+			<listheader label="Subject"/>
+			<listheader label="Feedback"/>
+		</listhead>
+		
+	</listbox>
+	
+	</hbox>
+	</vbox>
+</div>
+</zk>

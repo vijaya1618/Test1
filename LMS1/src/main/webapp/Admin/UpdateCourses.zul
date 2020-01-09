@@ -1,0 +1,68 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="Update Courses" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+	<?link rel="stylesheet" type="text/css" href="/style.css"?>
+
+	<grid sclass="fgrid">
+		<rows>
+			<row>
+				<cell style="background-color: #37A8AF;">
+					<label value="UPDATE NEW COURSE"
+						style="font-family:Trebuchet MS;font-size:14pt;text-align:right;color:#333;" />
+				</cell>
+			</row>
+		</rows>
+	</grid>
+	<div sclass="container" id="db"
+		use="com.lms.Admin.DeptNamesListWnd" style="padding-left:220px;background-image:url('../imgs/course4.jpg');background-size:80% 80%;padding-bottom: 300px;">
+		<vbox spacing="1em">
+			<hbox>
+				<label value="Select Department Name:"
+					style="font-family:Trebuchet MS;font-size:12pt; color:#333;" />
+				<space width="5px" />
+				<combobox id="Dept_names" sclass="ftextbox"
+					width="200px">
+					
+					<comboitem value="--Select DeptName--">				
+					</comboitem>
+				</combobox>
+			</hbox>
+
+			<hbox>
+				<label value="Enter Course Name:"
+					style="font-family:Trebuchet MS;font-size:12pt; color:#333;" />
+				<space width="48px" />
+				<textbox id="Course_Name" type="text" width="200px" sclass="ftextbox"
+					placeholder="Type Here" />
+			</hbox>
+			<hbox>
+				<label value="Enter Course Duration:"
+					style="font-family:Trebuchet MS;font-size:12pt; color:#333;" />
+				<space width="26px" />
+				<intbox width="200px" sclass="ftextbox"
+					id="Course_Duration" placeholder="Eg:20" />
+			</hbox>
+			<hbox>
+				<label value="Enter Tutor Id:"
+					style="font-family:Trebuchet MS;font-size:12pt; color:#333;" />
+				<space width="85px" />
+				<intbox  width="200px" sclass="ftextbox"
+					id="Tutor_Id" placeholder="Type Here" />
+				<label
+					apply="com.lms.Admin.LogController"
+					value="Click Here To know Tutor Info"
+					style="color:red; text-decoration : underline; cursor:pointer;" id="TutorInfo" />
+			</hbox>
+
+			<hbox>
+				<space width="150px" />
+				<button id="CourseEntry" label="Submit"  onClick="db.courseEntry()"
+					style=" border-color:#333; mold:trendy; text-align: center; margin-right:200px; background-color: #37A8AF;"
+					width="100px" />
+			</hbox>
+
+		</vbox>
+	</div>
+
+</zk>

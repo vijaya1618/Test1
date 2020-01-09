@@ -1,0 +1,28 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+<style>
+.z-north-body, .z-south-body, .z-west-body, .z-center-body, .z-east-body {
+    line-height: 16px;
+    padding: 0px; 
+    color: rgba(0,0,0,0.9);
+}
+</style>
+<custom-attributes org.zkoss.zul.image.preload="true" />
+	<borderlayout hflex="1" vflex="1">
+		<north vflex="min" border="none">
+			<apply templateURI="/Admin/banner.zul" />
+		</north>
+		<west width="260px" border="none" collapsible="true"
+			splittable="true" minsize="300">
+			<apply templateURI="/Admin/sidebar.zul" />
+		</west>
+		<center id="mainContent" autoscroll="true" >
+			
+			<include src="main.zul" id="x"></include>
+		</center>
+		<south border="none">
+			<apply templateURI="/Admin/footer.zul" />
+		</south>
+	</borderlayout>
+</zk>

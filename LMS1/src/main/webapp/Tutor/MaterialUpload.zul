@@ -1,0 +1,84 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+<style>
+.userbg{ 
+background-image:url('../imgs/filebg2.jpg');
+background-size:100% 100%;
+width:100%;
+ height:100%;
+ } 
+ .z-window-content{
+ padding:0px;
+ background-color:transparent;
+
+ }
+ .z-icon-file-text{
+ font-size: 45px;
+}
+.z-button {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 17px;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    color:black;
+    min-height: 24px;
+    padding: 3px 12px;
+    line-height: 14px;
+    cursor: pointer;
+    background: #bb9e9e;
+    width:120px;
+    }
+      .z-listbox-body{
+    background: #fff0;
+    
+    }
+    .z-icon-user{
+ font-size: 30px;
+ }
+</style>
+<window class="userbg">
+ <div height="15px" style="margin-top:10%;margin-right:20%;
+    background-color:#ffd0d000;">
+  	<html><![CDATA[
+        <h3 align="right" class="subdiv">MATERIALS TO ADDED</h3>
+    ]]></html>
+  </div>
+  
+					<div id="call" align="right"  style="margin-top:5%;margin-right:15%" use="com.lms.Tutor.MaterialsUploadCntrl">
+		
+              
+                    <hlayout>
+                         CourseId:<intbox tabindex="2" id="courseid" style="width: 212px;"  constraint="no empty" />
+                    </hlayout>
+          
+        <separator/>
+             
+                    <hlayout>
+                       CourseNAME:<textbox tabindex="2" id="coursename"  constraint="no empty" />
+                    </hlayout>
+                         <separator/>
+            
+                    <hlayout>
+                            DocumentName:<textbox tabindex="2" id="filename"  constraint="no empty" />
+                    </hlayout>
+                 
+            <separator/>
+            				<hlayout>
+            					<button id="upload" onClick="call.fileUpload()">
+            						UPLOAD
+            					</button>
+            				</hlayout>
+            				  <separator/>
+            <hlayout>
+            
+            <button label="CHECK COURSES" id="courses"  class="button" apply="com.lms.Tutor.TutorLogCtrl">CHECK COURSES
+	
+	</button>
+	  <button  id="submit"  visible="false" onClick="call.MaterialDetailsUpload()">SUBMIT</button>
+            </hlayout>
+					</div>
+</window>
+</zk>

@@ -1,0 +1,121 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+.userBg { 
+background-image:url('../imgs/ExamLogo.jpg');
+background-size:100% 100%;
+ } 
+ .heading {
+  text-shadow: 10px 10px 10px #FF0000;
+  font-size:35px;
+}
+.z-listheader ,.z-listitem,.z-listbox-header,.z-listbox-odd>.z-listcell,.z-listbox .z-listcell{
+background:transparent;
+
+border:1px solid;
+}
+.z-listbox{
+border:1px white;
+box-shadow:10px 10px 10px black;
+border-radius:5px;
+}
+
+.z-listcell{
+border:2px solid;
+border-radius:5px;
+}
+.z-listheader-content, .z-listcell-content, .z-listgroup-content, .z-listgroupfoot-content, .z-listfooter-content {
+color:black;
+font-size:13px;
+}
+.z-listheader-content{
+background: linear-gradient(to bottom,#fefefe 0,#e09b00f2 100%);
+}
+.subdiv
+{
+font-family:"helvetica Neue",Helvetica,Arial,sans-serif;
+font-size:37px;
+color:black;
+}
+  .z-window-modal.z-window-shadow, .z-window-highlighted.z-window-shadow {
+      position: absolute;
+    width: 500px;
+    top: 37px;
+    left: 256px;
+    z-index: 1800;
+    background: rgba(175, 182, 214, 0.38);
+ border-radius: 4px;
+}
+.z-column .z-column-content {
+background: #0000ff24;
+position: relative;
+}
+.z-window-content {
+border: 1px solid #cfcfcf;
+    margin: 0;
+    padding: 4px;
+    background: #d8e1f500;
+    overflow: hidden;
+    zoom: 1;
+}
+.z-column .z-column-content {
+    background: linear-gradient(to bottom,#fefefe 0,#e09b00f2 100%);
+    position: relative;
+}
+.z-button {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    min-height: 24px;
+    border: 1px solid #a9a9a9;
+    border-radius: 4px;
+    padding: 3px 12px;
+    line-height: 14px;
+    background: linear-gradient(to bottom,#fefefe 0,#e09b00f2 100%);
+    
+    }
+    .z-datebox-button{
+    background: linear-gradient(to bottom,#fefefe 0,#e09b00f2 100%);
+    }
+    .z-listbox-body{
+    background: #fff0;
+    
+    }
+ </style>
+
+<window id="taskListWnd"  width="100%" height="100%" class="userBg"
+  use="com.lms.Admin.TaskListWnd">
+  <div height="15px" style="margin-right:10%;">
+  	<html><![CDATA[
+        <h3 align="right" class="subdiv">EXAMS RECIEVED</h3>
+    ]]></html>
+  </div>
+  <div height="15px">
+  </div>
+  <div align="right" style="margin-right:10%;">
+	
+	<listbox id="taskslb" width="600px">
+		<listhead>
+		<listheader label="TUTOR ID"/>
+			<listheader label="TUTOR NAME" />
+			<listheader label="EXAM NAME" />
+			<listheader label="SUBJECT" />
+			<listheader label="MARKS" />
+			</listhead>
+	</listbox>
+	</div>
+	<div height="5px">
+	
+	</div>
+<div align="right" style="margin-right:10%;">
+	<button label="EXAMS" id="submit"  class="button" apply="com.lms.Admin.AddExamInfoPopup">CLICK HERE TO ADD EXAMS
+	
+	</button>
+	
+</div>
+	
+</window>
+</zk>

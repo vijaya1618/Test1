@@ -1,0 +1,23 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<zk>
+	<window title="news" border="none" id="loan" use="com.lms.Student.NewsController2">
+		<listbox id="course">
+			<listhead>
+				<listheader label="course id"></listheader>
+				<listheader label="course name"></listheader>
+				<listheader label="Course duration"></listheader>
+				<listheader label="department id"></listheader>
+				<listheader label="course Enroll"></listheader>
+			</listhead>
+			<template name="model">
+			<listitem>
+			<listcell label="${each.courseid} "></listcell>
+			<listcell label="${each.coursename }"></listcell>
+			<listcell label="${each.courseduration }"></listcell>
+			<listcell label="${each.departmentid} "></listcell>
+			<listcell><button id="${each.courseid}" onClick="loan.Courselogin(self.getId())" label="Enroll"></button></listcell>
+			</listitem>		
+			</template>
+		</listbox>
+	</window>
+</zk>

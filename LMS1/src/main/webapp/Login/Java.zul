@@ -1,0 +1,63 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+.z-window-content {
+background-color:#a1cae2;
+font-size:20px;
+}
+.c{
+font-size:40px;
+}
+
+</style>
+<window  border="normal" contentStyle="overflow:auto;">
+
+<label sclass="c">What is Java???</label>
+
+<hbox>Java is an object-oriented programming language developed by Sun Microsystems, and it was released in 1995.</hbox>
+<hbox>James Gosling initially developed Java in Sun Microsystems (which was later merged with Oracle Corporation).</hbox>
+<hbox>Java is a set of features of C and C++. It has obtained its format from C, and OOP features from C++.</hbox>
+<hbox>Java programs are platform independent which means they can be run on any operating system with any processor as long as the Java interpreter is available on that system.</hbox>
+<hbox>Java code that runs on one platform does not need to be recompiled to run on another platform; it's called write once, run anywhere(WORA).</hbox>
+<hbox>Java Virtual Machine (JVM) executes Java code, but it has been written in platform-specific languages such as C/C++/ASM, etc. JVM is not written in Java and hence cannot be platform independent, and Java interpreter is a part of JVM.</hbox>
+<separator/><separator/><separator/><separator/>
+
+
+<label sclass="c" >Where is Java being used?</label>
+
+<hbox>Earlier Java was only used to design and program small computing devices, but it was later adopted as one of the platform-independent programming languages, and now according to Sun, 3 billion devices run Java.</hbox>
+
+<hbox>Java is one of the most important programming languages in today's IT industries.</hbox>
+
+<hbox>JSP - In Java, JSP (Java Server Pages) is used to create dynamic web pages, such as in PHP and ASP.</hbox>
+<hbox>Applets - Applets are another type of Java programs that are implemented on Internet browsers and are always run as part of a web document.</hbox>
+<hbox>J2EE - Java 2 Enterprise Edition is a platform-independent environment that is a set of different protocols and APIs and is used by various organizations to transfer data between each other.</hbox>
+<hbox>JavaBeans - This is a set of reusable software components that can be easily used to create new and advanced applications.</hbox>
+<hbox>Mobile - In addition to the above technology, Java is widely used in mobile devices nowadays, many types of games and applications are being made in Java.</hbox>
+<separator/><separator/><separator/><separator/>
+
+<label sclass="c">Types of Java Applications:</label>
+<hbox>1.Web Application - Java is used to create server-side web applications. Currently, Servlet, JSP, Struts, JSF, etc. technologies are used.</hbox>
+<hbox>2.Standalone Application - It is also known as the desktop application or window-based application. An application that we need to install on every machine or server such as media player, antivirus, etc. AWT and Swing are used in java for creating standalone applications.</hbox>
+<hbox>3.Enterprise Application - An application that is distributed in nature, such as banking applications, etc. It has the advantage of high-level security, load balancing, and clustering. In Java, EJB is used for creating enterprise applications.</hbox>
+<hbox>4.Mobile Application - Java is used to create application software for mobile devices. Currently, Java ME is used for building applications for small devices, and also Java is a programming language for Google Android application development.</hbox>
+<separator/><separator/><separator/><separator/>
+
+<label sclass="c">Features of Java</label>
+<hbox>Object-Oriented - Java supports the features of object-oriented programming. Its object model is simple and easy to expand.</hbox>
+<hbox>Platform independent - C and C++ are platform dependency languages hence the application programs written in one Operating system cannot run in any other Operating system, but in platform independence language like Java application programs written in one Operating system can able to run on any Operating system.</hbox>
+<hbox>Simple - Java has included many features of C / C ++, which makes it easy to understand.</hbox>
+<hbox>Secure - Java provides a wide range of protection from viruses and malicious programs.  It ensures that there will be no damage and no security will be broken.</hbox>
+<hbox>Portable - Java provides us with the concept of portability. Running the same program with Java on different platforms is possible.</hbox>
+<hbox>Robust - During the development of the program, it helps us to find possible mistakes as soon as possible.</hbox>
+<hbox>Multi-threaded - The multithreading programming feature in Java allows you to write a program that performs several different tasks simultaneously.</hbox>
+<hbox>Distributed - Java is designed for distributed Internet environments as it manages the TCP/IP protocol.</hbox>
+<separator/><separator/><separator/><separator/>
+
+<hbox>For Further information about Java, you need to register and if already registered, you can login to the page. </hbox><separator/><separator/><separator/><separator/>
+<hbox><a href="http://localhost:8080/LMS1/Login/index.zul">Here is the link for registration page</a></hbox>
+
+
+
+</window>
+</zk>

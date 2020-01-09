@@ -1,0 +1,76 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.z-label{ font-family: Trebuchet MS; font-size: 14pt;
+		color:black; }
+
+
+
+		.z-center-body{ padding:0px;
+
+
+		}
+
+		img {     margin-top: -24px;
+    width: 174px;
+    height: 135px;
+    margin-left: -15px;
+
+		}
+	</style>
+	<div height="100%" apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm1') @init('com.lms.Tutor.LogController')">
+		<borderlayout>
+			<north height="15%">
+			<hbox pack="end">
+				<image src="/imgs/logo3.png" />
+				<menubar id="menubar" orient="horizontal"
+						style="margin-left:405%;margin-top:35px;width:250px;height:50px;">
+						<menu label="@load(vm1.x)" style="width:250px;" onClick="@command('profile')"
+							iconSclass="z-icon-user">
+							<menupopup>
+								<menuitem label="logout"  iconSclass="z-icon-user" onClick="@command('logout')"
+									style="width:240px;" />
+							</menupopup>
+						</menu>
+					</menubar>
+			</hbox>
+				
+				
+				
+				
+			</north>
+			<west width="17%">
+				<grid style="border:none">
+					<rows>
+						<row onClick="@command('dashBoard')">
+							<label value="DashBoard"></label>
+						</row>
+						<row onClick="@command('materialUp')">
+							<label value="MaterialUpload"></label>
+						</row>
+						<row onClick="@command('examEntry')">
+							<label sclass="label" value="ExamEntry">
+							</label>
+						</row>
+						<row onClick="@command('examPaper')">
+							<label sclass="label" value="ExamPaper">
+							</label>
+						</row>
+
+					</rows>
+				</grid>
+			</west>
+			<center>
+				<include id="myaccountprofilecontent" mode="instant"
+					sclass="content" src="@load(vm1.statement)" />
+			</center>
+		</borderlayout>
+	</div>
+	<style>
+		.z-west-body { line-height: 16px; padding: 0px; color:
+		rgba(0,0,0,0.9); }
+	</style>
+</zk>
+

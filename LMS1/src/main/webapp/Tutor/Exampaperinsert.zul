@@ -1,0 +1,67 @@
+<?init class="com.lms.Session.AuthenticationInit"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+.z-window-header {
+padding-bottom: 30px;
+color: rgb(31, 27, 27);
+font-size:35px;
+}
+
+.i{
+background-image:url('../imgs/examBg.jpg');
+background-size:100% 100%;
+background-repeat: no-repeat;
+}
+.z-vbox {
+    border-spacing: 0;
+
+align-content: center;
+    width: 820px;
+    margin-left: 395px;
+    margin-top: 130px;
+
+}
+	.z-window {
+  
+    padding: 0px;
+    background-color: #f9fcff;
+}
+.z-icon-user{
+ font-size: 30px;
+ }
+ .z-window-header{
+ color:transparent;
+ }
+</style>
+<window id="win"  border="normal" use="com.lms.Tutor.EpaperController" 
+contentSclass="i" width="100%" height="100%" contentStyle="overflow:auto;">
+
+ <vbox>
+        	
+
+            <textbox id="etype"  width="20%" placeholder="question_type:"  /><separator/>
+  
+        <textbox id="qsn"  width="40%" placeholder="Question:" /><separator/>
+        
+            
+            <textbox id="OptA" width="40%" placeholder="Option A:" /><separator/>
+        
+            
+            <textbox id="OptB" width="40%" placeholder="Option B:" /><separator/>
+          
+      
+            <textbox id="OptC" width="40%" placeholder="Option C:"  /><separator/>
+         
+            <textbox id="OptD" width="40%" placeholder="Option D:"  /><separator/>
+         
+     
+            <textbox id="Ans" width="20%" placeholder="Correct answer:"  /><separator/>
+         
+
+			<button id="sub" label="Submit" onClick="win.LoginUser2()"></button>
+</vbox>
+
+
+</window>
+</zk>
